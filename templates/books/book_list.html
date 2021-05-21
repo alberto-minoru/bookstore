@@ -6,7 +6,7 @@
     {% for book in book_list %} {# for book in object_list #}
     {# por padrão pode ser object_list ou (nome_obj)_list #}
         <div>
-            <h2><a href="">{{ book.title }}</a></h2>
+            <h2><a href="{{ book.get_absolute_url }}">{{ book.title }}</a></h2>
         </div>
     {% endfor %}
 {% endblock content %}
